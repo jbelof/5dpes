@@ -47,7 +47,7 @@ would map the PES at each point within a subcube of the unit cell spanned by [-1
 
 This main example consists of an orthorhombic unit cell containing the metal-organic framework MOF-5 with a single hydrogen molecule that is then imposed on a grid and rotated.  The resulting output is then:
 
-# X Y Z THETA PHI ENERGY
+\# X Y Z THETA PHI ENERGY
 -10.0000000000000000 -10.0000000000000000 -10.0000000000000000 0.0000000000000000 0.0000000000000000 -183.4211687345789414
 -10.0000000000000000 -10.0000000000000000 -10.0000000000000000 0.0000000000000000 0.1000000000000000 -184.2287123170468135
 -10.0000000000000000 -10.0000000000000000 -10.0000000000000000 0.0000000000000000 0.2000000000000000 -184.9762340141523111
@@ -59,9 +59,13 @@ with the first 3 numbers the (x,y,z) coordinates, the following 2 numbers the Eu
 
 ## Authors
 
-* **Jon Belof** - *complete development* - [jbelof](https://github.com/jbelof)
+* **Jon Belof**
+[jbelof@github](https://github.com/jbelof)
+[google scholar](https://scholar.google.com/citations?user=gNrlNbwAAAAJ&hl=en)
+[research gate](https://www.researchgate.net/profile/Jon_Belof)
+[linkedin](http://www.linkedin.com/in/jbelof)
+[web profile](http://jbelof.academia.edu)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
