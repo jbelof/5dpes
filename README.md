@@ -59,16 +59,19 @@ with the first 3 numbers the (x,y,z) coordinates, the following 2 numbers the Eu
 
 ## Authors
 
-* **Jon Belof**
-[jbelof@github](https://github.com/jbelof)
+* **Jon Belof** [jbelof@github](https://github.com/jbelof)
+
 [google scholar](https://scholar.google.com/citations?user=gNrlNbwAAAAJ&hl=en)
+
 [research gate](https://www.researchgate.net/profile/Jon_Belof)
+
 [linkedin](http://www.linkedin.com/in/jbelof)
+
 [web profile](http://jbelof.academia.edu)
 
 
 ## License
 
-This proejct is licensed under the GNU General Public License v3, please see GPL_license.txt for details
+This proejct is licensed under the GNU General Public License v3, please see GPL_license.txt for details.
 
 
