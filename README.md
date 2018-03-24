@@ -29,22 +29,24 @@ gcc -c -O3 -DDEBUG -I. pbc.c
 gcc -c -O3 -DDEBUG -I. surface.c  
 gcc -c -O3 -DDEBUG -I. energy.c  
 gcc -O3 -DDEBUG *.o -o 5dpes  
+$  
+
 
 ## Running the examples
 
 Run the 5dpes binary without arguments to obtain the command line input:
 
 $ ./5dpes 
-usage: ./5dpes <PDB filename> [<b1_x> <b1_y> <b1_z> <b2_x> <b2_y> <b2_z> <b3_x> <b3_y> <b3_z>] [<xi> <yi> <zi> <xf> <yf> <zf>] [<dx> <dy> <dz> <dtheta> <dphi>]
-	[b1,...,b3] : the cartesian basis vectors (in A) of the unit cell, each b vector is a row of the basis matrix
-	[xi,...,zf] : the initial and final xyz c.o.m. coordinates for the PES generation
-	[dx,...,dphi] : the step size for c.o.m. coordinates and for the spherical polar angles (theta angle of rotation around the Y axis, phi is the angle around the Z axis)
-	columnar output is [x,y,z,theta,phi,E(in Kelvin)]
-MOF5 example:
-	$ ./5dpes MOF5+H2.pdb 25.669 0.0 0.0 0.0 25.669 0.0 0.0 0.0 25.669 -10.0 -10.0 -10.0 10.0 10.0 10.0 0.001 0.001 0.001 0.1 0.1
-would map the PES at each point within a subcube of the unit cell spanned by [-10,-10,-10]x[10,10,10] for all angles theta=0-pi,phi=0-2*pi
+usage: ./5dpes <PDB filename> [<b1_x> <b1_y> <b1_z> <b2_x> <b2_y> <b2_z> <b3_x> <b3_y> <b3_z>] [<xi> <yi> <zi> <xf> <yf> <zf>] [<dx> <dy> <dz> <dtheta> <dphi>]  
+	[b1,...,b3] : the cartesian basis vectors (in A) of the unit cell, each b vector is a row of the basis matrix  
+	[xi,...,zf] : the initial and final xyz c.o.m. coordinates for the PES generation  
+	[dx,...,dphi] : the step size for c.o.m. coordinates and for the spherical polar angles (theta angle of rotation around the Y axis, phi is the angle around the Z axis)  
+	columnar output is [x,y,z,theta,phi,E(in Kelvin)]  
+MOF5 example:  
+	$ ./5dpes MOF5+H2.pdb 25.669 0.0 0.0 0.0 25.669 0.0 0.0 0.0 25.669 -10.0 -10.0 -10.0 10.0 10.0 10.0 0.001 0.001 0.001 0.1 0.1  
+would map the PES at each point within a subcube of the unit cell spanned by [-10,-10,-10]x[10,10,10] for all angles theta=0-pi,phi=0-2*pi  
 
-This main example consists of an orthorhombic unit cell containing the metal-organic framework MOF-5 with a single hydrogen molecule that is then imposed on a grid and rotated.  The resulting output is then:
+This main example consists of an orthorhombic unit cell containing the metal-organic framework MOF-5 with a single hydrogen molecule that is then imposed on a grid and rotated.  The resulting output is then:  
 
 \# X Y Z THETA PHI ENERGY  
 -10.0000000000000000 -10.0000000000000000 -10.0000000000000000 0.0000000000000000 0.0000000000000000 -183.4211687345789414  
