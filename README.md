@@ -70,6 +70,6 @@ with the first 3 numbers the (x,y,z) coordinates, the following 2 numbers the Eu
 
 ## License
 
-This proejct is licensed under the GNU General Public License v3, please see GPL_license.txt for details.
+This project is licensed under the GNU General Public License v3, please see GPL_license.txt for details.
 
 
